@@ -22,7 +22,7 @@ export default function Meta(props) {
                     }
                     body {
                     margin: 0;
-                    font-family: "Work Sans", "Helvetica Neue", Helvetica, sans-serif;
+                    font-family: "Ubuntu", "Helvetica Neue", Helvetica, sans-serif;
                     overflow-x: hidden;
                     color: #000;
                     font-size: 16px;
@@ -151,7 +151,7 @@ export default function Meta(props) {
                     h5,
                     h6,
                     p {
-                    font-family: "Work Sans", "Helvetica Neue", Helvetica, sans-serif;
+                    font-family: "Ubuntu", "Helvetica Neue", Helvetica, sans-serif;
                     margin-left: 0;
                     margin-right: 0;
                     margin-top: 0;
@@ -182,7 +182,7 @@ export default function Meta(props) {
                     }
 
                     h3 {
-                    font-size: 1.2rem;
+                    font-size: 1.0rem;
                     letter-spacing: -0.5px;
                     line-height: 1.1875;
                     color: #a0a0a0;

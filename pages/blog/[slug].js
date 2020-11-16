@@ -22,12 +22,6 @@ export default function BlogTemplate({ frontmatter, markdownBody, siteTitle }) {
   return (
     <Layout siteTitle={siteTitle}>
       <article className="blog">
-        <figure className="blog__hero">
-          <img
-            src={frontmatter.hero_image}
-            alt={`blog_hero_${frontmatter.title}`}
-          />
-        </figure>
         <div className="blog__info">
           <h1>{frontmatter.title}</h1>
           <h3>{reformatDate(frontmatter.date)}</h3>
@@ -35,7 +29,6 @@ export default function BlogTemplate({ frontmatter, markdownBody, siteTitle }) {
         <div className="blog__body">
           <ReactMarkdown source={markdownBody} />
         </div>
-        <h2 className="blog__footer">Written By: {frontmatter.author}</h2>
       </article>
       <style jsx>
         {`
@@ -83,7 +76,7 @@ export default function BlogTemplate({ frontmatter, markdownBody, siteTitle }) {
             padding-bottom: 1.5rem;
           }
           .blog__body:last-child {
-            margin-bottom: 0;
+            margin-bottom: 30px;
           }
           .blog__body h1 h2 h3 h4 h5 h6 p {
             font-weight: normal;
